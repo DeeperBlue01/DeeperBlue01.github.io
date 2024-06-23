@@ -1,56 +1,82 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <title>私の履歴書</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>私の履歴書</h1>
-        <div class="nav">
-            <a href="index_jp.html">ホーム</a>
-            <a href="cv.html?lang=jp">履歴書</a>
-            <a href="cv.html?lang=fr"><img src="fr_flag.png" alt="フランス語" class="flag"></a>
-            <a href="cv.html?lang=jp"><img src="jp_flag.png" alt="日本語" class="flag"></a>
-            <a href="cv.html?lang=pol"><img src="pol_flag.png" alt="ポーランド語" class="flag"></a>
-        </div>
-        <div id="cv-content" class="cv-content">
-            <!-- Le contenu du CV sera généré à partir du XML -->
-        </div>
-    </div>
-    <footer>
-        &copy; 2024 Mon Portfolio
-    </footer>
-    <script>
-        function getQueryVariable(variable) {
-            const query = window.location.search.substring(1);
-            const vars = query.split("&");
-            for (let i = 0; i < vars.length; i++) {
-                const pair = vars[i].split("=");
-                if (pair[0] === variable) {
-                    return pair[1];
-                }
-            }
-            return false;
-        }
-
-        function loadCV(lang) {
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function() {
-                if (this.status == 200) {
-                    document.getElementById("cv-content").innerHTML = this.responseText;
-                } else {
-                    document.getElementById("cv-content").innerHTML = "CVの読み込みエラー.";
-                }
-            }
-            xhttp.open("GET", "cv_" + lang + ".xml", true);
-            xhttp.send();
-        }
-
-        const lang = getQueryVariable("lang") || "jp";
-        document.documentElement.lang = lang;
-        loadCV(lang);
-    </script>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+<cv>
+    <personal-info>
+        <name>マッシル シャケル</name>
+        <address>アルジャントゥイユ</address>
+        <email>chakermassyl@gmail.com</email>
+        <phone>+33 6 12 34 56 78</phone>
+    </personal-info>
+    <education>
+        <school>
+            <name>Sup Galilée, ヴィレタヌーズ</name>
+            <degree>コンピューターエンジニアリングプログラム</degree>
+            <year>2022 – 2025</year>
+        </school>
+        <school>
+            <name>Université Sorbonne Paris Nord, ヴィレタヌーズ</name>
+            <degree>コンピューターサイエンス学士</degree>
+            <year>2020 – 2022</year>
+        </school>
+    </education>
+    <experience>
+        <job>
+            <title>デボップスエンジニア（デュアルトレーニング）</title>
+            <company>Société Générale</company>
+            <years>2023年9月以降</years>
+            <location>フランス フォンテネー・スー・ボワ</location>
+        </job>
+        <job>
+            <title>多目的商業従業員</title>
+            <company>Franprix</company>
+            <years>2021年7月 - 2023年6月</years>
+            <location>フランス パリ 9区</location>
+            <contract>パートタイム正社員</contract>
+        </job>
+        <job>
+            <title>脱出ゲームガイド</title>
+            <company>Kraken Escape</company>
+            <years>2019年11月 – 2020年2月</years>
+            <location>フランス リエヴァン</location>
+            <contract>パートタイム契約社員</contract>
+        </job>
+    </experience>
+    <languages>
+        <language>
+            <name>フランス語</name>
+            <proficiency>母国語レベル</proficiency>
+        </language>
+        <language>
+            <name>英語</name>
+            <proficiency>中級</proficiency>
+        </language>
+        <language>
+            <name>カビル語</name>
+            <proficiency>母国語レベル</proficiency>
+        </language>
+        <language>
+            <name>アラビア語</name>
+            <proficiency>流暢</proficiency>
+        </language>
+    </languages>
+    <interests>
+        <interest>水泳、筋トレ、バスケットボール</interest>
+        <interest>ストラテジーゲーム</interest>
+        <interest>読書</interest>
+    </interests>
+    <skills>
+        <soft-skills>
+            <skill>厳密さ</skill>
+            <skill>責任感</skill>
+            <skill>細部への注意</skill>
+            <skill>好奇心</skill>
+        </soft-skills>
+        <technical-skills>
+            <skill>DevOps: Terraform, Ansible, Jenkins, GitHub Actions, XL Deploy, Liquibase</skill>
+            <skill>プログラミング言語: C, C++, Java, Python, OCaml, MatLab</skill>
+            <skill>Web: HTML & CSS, PHP, JavaScript</skill>
+            <skill>ソフトウェア: Git, Nginx, パックオフィス, Eclipse, Docker</skill>
+            <skill>その他: UML, SQL, Apex Oracle, アルゴリズム（データ構造、グラフアルゴリズム、動的プログラミング）</skill>
+        </technical-skills>
+    </skills>
+</cv>
