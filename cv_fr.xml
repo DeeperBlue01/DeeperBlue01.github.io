@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
-<cv>
-    <personal-info>
+<curriculum_vitae>
+    <personal_info>
         <name>Jean Dupont</name>
+        <address>Paris, France</address>
         <email>jean.dupont@example.com</email>
-        <phone>+33 6 12 34 56 78</phone>
-    </personal-info>
+        <phone>+33 1 23 45 67 89</phone>
+    </personal_info>
     <education>
-        <school>
-            <name>Université Paris-Sorbonne</name>
-            <degree>Master en Informatique</degree>
-            <year>2020</year>
-        </school>
+        <degree>Master en Informatique</degree>
+        <institution>Université de Paris</institution>
+        <year>2022</year>
     </education>
     <experience>
         <job>
-            <title>Développeur Web</title>
-            <company>Exemple SA</company>
-            <years>2020-2023</years>
+            <title>Ingénieur Logiciel</title>
+            <company>Tech XYZ</company>
+            <years>2022-2024</years>
+            <description>Développement d'applications web.</description>
         </job>
     </experience>
-</cv>
+    <skills>
+        <skill>Programmation en JavaScript</skill>
+        <skill>HTML &amp; CSS</skill>
+        <skill>Python</skill>
+    </skills>
+</curriculum_vitae>

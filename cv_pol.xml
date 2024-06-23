@@ -1,56 +1,27 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Moje CV</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Moje CV</h1>
-        <div class="nav">
-            <a href="index_pol.html">Strona główna</a>
-            <a href="cv.html?lang=pol">CV</a>
-            <a href="cv.html?lang=fr"><img src="fr_flag.png" alt="Francuski" class="flag"></a>
-            <a href="cv.html?lang=jp"><img src="jp_flag.png" alt="Japoński" class="flag"></a>
-            <a href="cv.html?lang=pol"><img src="pol_flag.png" alt="Polski" class="flag"></a>
-        </div>
-        <div id="cv-content" class="cv-content">
-            <!-- Le contenu du CV sera généré à partir du XML -->
-        </div>
-    </div>
-    <footer>
-        &copy; 2024 Mon Portfolio
-    </footer>
-    <script>
-        function getQueryVariable(variable) {
-            const query = window.location.search.substring(1);
-            const vars = query.split("&");
-            for (let i = 0; i < vars.length; i++) {
-                const pair = vars[i].split("=");
-                if (pair[0] === variable) {
-                    return pair[1];
-                }
-            }
-            return false;
-        }
-
-        function loadCV(lang) {
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function() {
-                if (this.status == 200) {
-                    document.getElementById("cv-content").innerHTML = this.responseText;
-                } else {
-                    document.getElementById("cv-content").innerHTML = "Błąd ładowania CV.";
-                }
-            }
-            xhttp.open("GET", "cv_" + lang + ".xml", true);
-            xhttp.send();
-        }
-
-        const lang = getQueryVariable("lang") || "pol";
-        document.documentElement.lang = lang;
-        loadCV(lang);
-    </script>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum_vitae>
+    <personal_info>
+        <name>Jan Kowalski</name>
+        <address>Warszawa, Polska</address>
+        <email>jan.kowalski@example.com</email>
+        <phone>+48 123 456 789</phone>
+    </personal_info>
+    <education>
+        <degree>Magister Informatyki</degree>
+        <institution>Uniwersytet Warszawski</institution>
+        <year>2022</year>
+    </education>
+    <experience>
+        <job>
+            <title>Inżynier Oprogramowania</title>
+            <company>ABC Tech</company>
+            <years>2022-2024</years>
+            <description>Rozwój aplikacji webowych.</description>
+        </job>
+    </experience>
+    <skills>
+        <skill>Programowanie w JavaScript</skill>
+        <skill>HTML &amp; CSS</skill>
+        <skill>Python</skill>
+    </skills>
+</curriculum_vitae>
