@@ -78,42 +78,27 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = personal.querySelector('email').textContent;
 
         cvContent.innerHTML += `<h3>${name}</h3>`;
-        cvContent.innerHTML += `<p><strong>Address:</strong> ${address}</p>`;
+        cvContent.innerHTML += `<p><strong>${getSectionTitle('address', xml)}</strong>: ${address}</p>`;
         cvContent.innerHTML += `<p><strong>Email:</strong> ${email}</p>`;
 
-        cvContent.innerHTML += '<h4>Formation</h4>';
-        education.querySelectorAll('entry').forEach(entry => {
-            const year = entry.querySelector('year').textContent;
-            const details = entry.querySelector('details').textContent;
-            cvContent.innerHTML += `<p>${year} : ${details}</p>`;
-        });
+        displaySection('education', education, xml);
+        displaySection('experience', experience, xml);
+        displaySection('languages', languages, xml);
+        displaySection('interests', interests, xml);
+        displaySection('skills', skills, xml);
+        displaySection('technical', technical, xml);
+    }
 
-        cvContent.innerHTML += '<h4>Expériences professionnelles</h4>';
-        experience.querySelectorAll('entry').forEach(entry => {
-            const year = entry.querySelector('year').textContent;
-            const details = entry.querySelector('details').textContent;
-            cvContent.innerHTML += `<p>${year} : ${details}</p>`;
-        });
-
-        cvContent.innerHTML += '<h4>Langues</h4>';
-        languages.querySelectorAll('entry').forEach(entry => {
+    function displaySection(sectionName, sectionXml, xml) {
+        const cvContent = document.getElementById('cv-content');
+        cvContent.innerHTML += `<h4>${getSectionTitle(sectionName, xml)}</h4>`;
+        sectionXml.querySelectorAll('entry').forEach(entry => {
             cvContent.innerHTML += `<p>${entry.textContent}</p>`;
         });
+    }
 
-        cvContent.innerHTML += '<h4>Centres d’intérêt</h4>';
-        interests.querySelectorAll('entry').forEach(entry => {
-            cvContent.innerHTML += `<p>${entry.textContent}</p>`;
-        });
-
-        cvContent.innerHTML += '<h4>Soft skills</h4>';
-        skills.querySelectorAll('entry').forEach(entry => {
-            cvContent.innerHTML += `<p>${entry.textContent}</p>`;
-        });
-
-        cvContent.innerHTML += '<h4>Compétences techniques</h4>';
-        technical.querySelectorAll('entry').forEach(entry => {
-            cvContent.innerHTML += `<p>${entry.textContent}</p>`;
-        });
+    function getSectionTitle(sectionName, xml) {
+        return xml.querySelector(`${sectionName} > title`).textContent;
     }
 
     // Load the default language on page load

@@ -6,6 +6,7 @@
         <email>chakermassyl@gmail.com</email>
     </personal>
     <education>
+        <title>学歴</title>
         <entry>
             <year>2022 – 2025</year>
             <details>情報工学専攻 – スプ・ガリレー, ヴィルトヌーズ</details>
@@ -16,6 +17,7 @@
         </entry>
     </education>
     <experience>
+        <title>職務経歴</title>
         <entry>
             <year>2023年9月から現在</year>
             <details>DevOpsエンジニア – ソシエテ・ジェネラル, フォンテヌー・スー・ボワ</details>
@@ -30,23 +32,27 @@
         </entry>
     </experience>
     <languages>
+        <title>言語</title>
         <entry>フランス語 : ネイティブ</entry>
         <entry>英語 : 中級</entry>
         <entry>カビル語 : ネイティブ</entry>
         <entry>アラビア語 : 流暢</entry>
     </languages>
     <interests>
+        <title>趣味</title>
         <entry>水泳、筋トレ、バスケットボール</entry>
         <entry>ストラテジーゲーム</entry>
         <entry>読書</entry>
     </interests>
     <skills>
+        <title>スキル</title>
         <entry>厳密</entry>
         <entry>責任感</entry>
         <entry>細部に注意</entry>
         <entry>好奇心旺盛</entry>
     </skills>
     <technical>
+        <title>技術的スキル</title>
         <entry>DevOps : Terraform, Ansible, Jenkins, GitHub Actions, XLDeploy, Liquibase</entry>
         <entry>プログラミング言語 : C, C++, Java, Python, OCaml, MatLab</entry>
         <entry>Web : HTML & CSS, PHP, JavaScript</entry>
