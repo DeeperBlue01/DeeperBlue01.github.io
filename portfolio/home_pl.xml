@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+    <welcome>Witamy na moim portfolio</welcome>
+    <home>
+        <title>Strona główna</title>
+        <description>Witamy na stronie głównej mojego portfolio. Użyj menu, aby nawigować.</description>
+    </home>
+    <cv>
+        <title>CV</title>
+    </cv>
+</content>

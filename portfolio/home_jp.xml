@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+    <welcome>私のポートフォリオへようこそ</welcome>
+    <home>
+        <title>ホーム</title>
+        <description>私のポートフォリオのホームページへようこそ。メニューを使用してナビゲートします。</description>
+    </home>
+    <cv>
+        <title>履歴書</title>
+    </cv>
+</content>

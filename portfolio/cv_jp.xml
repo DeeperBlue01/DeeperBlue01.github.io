@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv>
+    <personal>
+        <name>マシール・シャケル</name>
+        <address>アルジャントゥイユ</address>
+        <email>chakermassyl@gmail.com</email>
+    </personal>
+    <education>
+        <entry>
+            <year>2022 – 2025</year>
+            <details>情報工学専攻 – スプ・ガリレー, ヴィルトヌーズ</details>
+        </entry>
+        <entry>
+            <year>2020 – 2022</year>
+            <details>情報学士号 (優等) – ソルボンヌ・パリ北大学, ヴィルトヌーズ</details>
+        </entry>
+    </education>
+    <experience>
+        <entry>
+            <year>2023年9月から現在</year>
+            <details>DevOpsエンジニア – ソシエテ・ジェネラル, フォンテヌー・スー・ボワ</details>
+        </entry>
+        <entry>
+            <year>2021年7月 - 2023年6月</year>
+            <details>多目的店員 – フランプリ, パリ9区 – 非常勤正社員</details>
+        </entry>
+        <entry>
+            <year>2019年11月 – 2020年2月</year>
+            <details>脱出ゲームガイド – クラケン・エスケープ, リエヴァン – 短期雇用</details>
+        </entry>
+    </experience>
+    <languages>
+        <entry>フランス語 : ネイティブ</entry>
+        <entry>英語 : 中級</entry>
+        <entry>カビル語 : ネイティブ</entry>
+        <entry>アラビア語 : 流暢</entry>
+    </languages>
+    <interests>
+        <entry>水泳、筋トレ、バスケットボール</entry>
+        <entry>ストラテジーゲーム</entry>
+        <entry>読書</entry>
+    </interests>
+    <skills>
+        <entry>厳密</entry>
+        <entry>責任感</entry>
+        <entry>細部に注意</entry>
+        <entry>好奇心旺盛</entry>
+    </skills>
+    <technical>
+        <entry>DevOps : Terraform, Ansible, Jenkins, GitHub Actions, XLDeploy, Liquibase</entry>
+        <entry>プログラミング言語 : C, C++, Java, Python, OCaml, MatLab</entry>
+        <entry>Web : HTML & CSS, PHP, JavaScript</entry>
+        <entry>ソフトウェア : Git, Nginx, Pack Office, Eclipse, Docker</entry>
+        <entry>その他 : UML, SQL, Apex Oracle, アルゴリズム (データ構造、グラフアルゴリズム、動的プログラミング)</entry>
+    </technical>
+</cv>

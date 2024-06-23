@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Massyl CHAKER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-message">Bienvenue sur mon portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Accueil</a></li>
+                <li><a href="#" id="cv-link">CV</a></li>
+                <li>
+                    <a href="#" class="language-link" data-lang="fr"><img src="france-flag.png" alt="Français"></a>
+                    <a href="#" class="language-link" data-lang="jp"><img src="japan-flag.png" alt="Japonais"></a>
+                    <a href="#" class="language-link" data-lang="pl"><img src="poland-flag.png" alt="Polonais"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home-section">
+            <h2 id="home-title">Accueil</h2>
+            <p id="home-description">Bienvenue sur la page d'accueil de mon portfolio. Utilisez le menu pour naviguer.</p>
+        </section>
+        <section id="cv-section" style="display: none;">
+            <h2 id="cv-title">CV</h2>
+            <div id="cv-content">
+                <!-- CV content will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

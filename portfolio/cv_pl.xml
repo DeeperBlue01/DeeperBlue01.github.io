@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv>
+    <personal>
+        <name>Massyl CHAKER</name>
+        <address>Argenteuil</address>
+        <email>chakermassyl@gmail.com</email>
+    </personal>
+    <education>
+        <entry>
+            <year>2022 – 2025</year>
+            <details>Inżynieria informatyczna – Sup Galilée, Villetaneuse</details>
+        </entry>
+        <entry>
+            <year>2020 – 2022</year>
+            <details>Licencjat z informatyki (Z wyróżnieniem) – Université Sorbonne Paris Nord, Villetaneuse</details>
+        </entry>
+    </education>
+    <experience>
+        <entry>
+            <year>Od września 2023</year>
+            <details>Inżynier DevOps w ramach praktyk – Société Générale, Fontenay-sous-Bois</details>
+        </entry>
+        <entry>
+            <year>lipiec 2021 - czerwiec 2023</year>
+            <details>Sprzedawca wielobranżowy – Franprix, Paryż 9 – Umowa o pracę na część etatu</details>
+        </entry>
+        <entry>
+            <year>Listopad 2019 – luty 2020</year>
+            <details>Przewodnik w grze escape room – Kraken Escape, Liévin – Umowa o pracę na część etatu</details>
+        </entry>
+    </experience>
+    <languages>
+        <entry>Francuski : dwujęzyczny lub ojczysty</entry>
+        <entry>Angielski : średnio zaawansowany</entry>
+        <entry>Kabylski : dwujęzyczny lub ojczysty (matczyna)</entry>
+        <entry>Arabski : płynny</entry>
+    </languages>
+    <interests>
+        <entry>Pływanie, kulturystyka, koszykówka</entry>
+        <entry>Gry strategiczne</entry>
+        <entry>Czytanie</entry>
+    </interests>
+    <skills>
+        <entry>Rzetelność</entry>
+        <entry>Odpowiedzialność</entry>
+        <entry>Uwaga na szczegóły</entry>
+        <entry>Ciekawość</entry>
+    </skills>
+    <technical>
+        <entry>DevOps : Terraform, Ansible, Jenkins, GitHub Actions, XLDeploy, Liquibase</entry>
+        <entry>Języki programowania : C, C++, Java, Python, OCaml, MatLab</entry>
+        <entry>Web : HTML & CSS, PHP, JavaScript</entry>
+        <entry>Oprogramowanie : Git, Nginx, Pack Office, Eclipse, Docker</entry>
+        <entry>Inne : UML, SQL, Apex Oracle, Algorytmy (struktury danych, algorytmy grafowe, programowanie dynamiczne)</entry>
+    </technical>
+</cv>
