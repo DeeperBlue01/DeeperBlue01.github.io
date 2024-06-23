@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
+<cv>
+    <personal-info>
+        <name>Jan Kowalski</name>
+        <email>jan.kowalski@example.pl</email>
+        <phone>+48 600 123 456</phone>
+    </personal-info>
+    <education>
+        <school>
+            <name>Uniwersytet Warszawski</name>
+            <degree>Magister Informatyki</degree>
+            <year>2020</year>
+        </school>
+    </education>
+    <experience>
+        <job>
+            <title>Web Developer</title>
+            <company>Przykład SA</company>
+            <years>2020-2023</years>
+        </job>
+    </experience>
+</cv>

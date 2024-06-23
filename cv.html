@@ -21,12 +21,18 @@
         function loadCV(lang) {
             const xhttp = new XMLHttpRequest();
             xhttp.onload = function() {
-                document.getElementById("cv-content").innerHTML = this.responseText;
+                if (this.status == 200) {
+                    document.getElementById("cv-content").innerHTML = this.responseText;
+                } else {
+                    document.getElementById("cv-content").innerHTML = "Erreur de chargement du CV.";
+                }
             }
             xhttp.open("GET", "cv_" + lang + ".xml", true);
             xhttp.send();
         }
-        loadCV("fr");  // Charger le CV en français par défaut
+        // Obtenir la langue de la page actuelle
+        const lang = document.documentElement.lang;
+        loadCV(lang);
     </script>
 </body>
 </html>
