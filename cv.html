@@ -8,16 +8,28 @@
 <body>
     <h1>Mon CV</h1>
     <div class="nav">
-        <a href="index.html">Accueil</a>
+        <a href="index_fr.html">Accueil</a>
         <a href="cv.html">CV</a>
-        <a href="index_fr.html"><img src="fr_flag.png" alt="Français"></a>
-        <a href="index_jp.html"><img src="jp_flag.png" alt="Japonais"></a>
-        <a href="index_pol.html"><img src="pol_flag.png" alt="Polonais"></a>
+        <a href="cv.html?lang=fr"><img src="fr_flag.png" alt="Français"></a>
+        <a href="cv.html?lang=jp"><img src="jp_flag.png" alt="Japonais"></a>
+        <a href="cv.html?lang=pol"><img src="pol_flag.png" alt="Polonais"></a>
     </div>
     <div id="cv-content">
         <!-- Le contenu du CV sera généré à partir du XML -->
     </div>
     <script>
+        function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split("&");
+            for (let i = 0; i < vars.length; i++) {
+                const pair = vars[i].split("=");
+                if (pair[0] === variable) {
+                    return pair[1];
+                }
+            }
+            return false;
+        }
+
         function loadCV(lang) {
             const xhttp = new XMLHttpRequest();
             xhttp.onload = function() {
@@ -30,8 +42,9 @@
             xhttp.open("GET", "cv_" + lang + ".xml", true);
             xhttp.send();
         }
-        // Obtenir la langue de la page actuelle
-        const lang = document.documentElement.lang;
+
+        const lang = getQueryVariable("lang") || "fr";
+        document.documentElement.lang = lang;
         loadCV(lang);
     </script>
 </body>
