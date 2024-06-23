@@ -1,0 +1,15 @@
+<!ELEMENT cv (personal-info, education, experience)>
+<!ELEMENT personal-info (name, email, phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT education (school+)>
+<!ELEMENT school (name, degree, year)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT degree (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT experience (job+)>
+<!ELEMENT job (title, company, years)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT years (#PCDATA)>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon CV</title>
+    <link rel="stylesheet" type="text/css" href="cv.xsl">
+</head>
+<body>
+    <h1>Mon CV</h1>
+    <div class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="cv.html">CV</a>
+        <a href="index_fr.html"><img src="fr_flag.png" alt="Français"></a>
+        <a href="index_jp.html"><img src="jp_flag.png" alt="Japonais"></a>
+        <a href="index_pol.html"><img src="pol_flag.png" alt="Polonais"></a>
+    </div>
+    <div id="cv-content">
+        <!-- Le contenu du CV sera généré à partir du XML -->
+    </div>
+    <script>
+        function loadCV(lang) {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("cv-content").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "cv_" + lang + ".xml", true);
+            xhttp.send();
+        }
+        loadCV("fr");  // Charger le CV en français par défaut
+    </script>
+</body>
+</html>

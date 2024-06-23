@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+<cv>
+    <personal-info>
+        <name>山田太郎</name>
+        <email>taro.yamada@example.jp</email>
+        <phone>+81 90 1234 5678</phone>
+    </personal-info>
+    <education>
+        <school>
+            <name>東京大学</name>
+            <degree>情報学修士</degree>
+            <year>2020</year>
+        </school>
+    </education>
+    <experience>
+        <job>
+            <title>ウェブ開発者</title>
+            <company>例株式会社</company>
+            <years>2020-2023</years>
+        </job>
+    </experience>
+</cv>
