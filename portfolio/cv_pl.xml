@@ -6,7 +6,6 @@
         <email>chakermassyl@gmail.com</email>
     </personal>
     <education>
-        <title>Edukacja</title>
         <entry>
             <year>2022 – 2025</year>
             <details>Inżynieria informatyczna – Sup Galilée, Villetaneuse</details>
@@ -17,7 +16,6 @@
         </entry>
     </education>
     <experience>
-        <title>Doświadczenie zawodowe</title>
         <entry>
             <year>Od września 2023</year>
             <details>Inżynier DevOps w ramach praktyk – Société Générale, Fontenay-sous-Bois</details>
@@ -32,27 +30,23 @@
         </entry>
     </experience>
     <languages>
-        <title>Języki</title>
         <entry>Francuski : dwujęzyczny lub ojczysty</entry>
         <entry>Angielski : średnio zaawansowany</entry>
         <entry>Kabylski : dwujęzyczny lub ojczysty (matczyna)</entry>
         <entry>Arabski : płynny</entry>
     </languages>
     <interests>
-        <title>Zainteresowania</title>
         <entry>Pływanie, kulturystyka, koszykówka</entry>
         <entry>Gry strategiczne</entry>
         <entry>Czytanie</entry>
     </interests>
     <skills>
-        <title>Umiejętności</title>
         <entry>Rzetelność</entry>
         <entry>Odpowiedzialność</entry>
         <entry>Uwaga na szczegóły</entry>
         <entry>Ciekawość</entry>
     </skills>
     <technical>
-        <title>Umiejętności techniczne</title>
         <entry>DevOps : Terraform, Ansible, Jenkins, GitHub Actions, XLDeploy, Liquibase</entry>
         <entry>Języki programowania : C, C++, Java, Python, OCaml, MatLab</entry>
         <entry>Web : HTML & CSS, PHP, JavaScript</entry>
