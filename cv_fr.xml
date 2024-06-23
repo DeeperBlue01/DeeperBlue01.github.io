@@ -2,62 +2,61 @@
 <!DOCTYPE cv SYSTEM "cv.dtd">
 <cv>
     <personal-info>
-        <name>Massyl CHAKER</name>
-        <address>Argenteuil</address>
-        <email>chakermassyl@gmail.com</email>
-        <phone>+33 6 12 34 56 78</phone>
+        <name>Massyl CHAKER&#10;</name>
+        <address>Adresse : Argenteuil, 95100&#10;</address>
+        <email>adresse mail : chakermassyl@gmail.com&#10;</email>
+        <phone>numéro de téléphone : 0 1000 1000 1000&#10;</phone>
     </personal-info>
     <education>
         <school>
-            <name>Sup Galilée, Villetaneuse</name>
-            <degree>Cursus ingénieur informatique</degree>
-            <year>2022 – 2025</year>
+            <name>Cursus : &#10;Sup Galilée, Villetaneuse&#10;</name>
+            <degree> Cursus ingénieur informatique</degree>
+            <year> 2022 – 2025</year>
         </school>
         <school>
-            <name>Université Sorbonne Paris Nord, Villetaneuse</name>
-            <degree>Licence 2 informatique</degree>
-            <year>2020 – 2022</year>
+            <name>&#10;Université Sorbonne Paris Nord, Villetaneuse</name>
+            <degree> Licence 2 informatique</degree>
+            <year> 2020 – 2022</year>
         </school>
     </education>
     <experience>
         <job>
-            <title>Ingénieur DevOps en alternance</title>
-            <company>Société Générale</company>
-            <years>depuis septembre 2023</years>
-            <location>Fontenay-sous-Bois, France</location>
+            <title>Expérience professionnelle : &#10;Ingénieur DevOps en alternance</title>
+            <company> Société Générale</company>
+            <years> depuis septembre 2023</years>
+            <location> Fontenay-sous-Bois, France</location>
         </job>
         <job>
-            <title>Employé commercial polyvalent</title>
-            <company>Franprix</company>
-            <years>juillet 2021 - juin 2023</years>
-            <location>Paris 9e, France</location>
-            <contract>CDI à temps partiel</contract>
+            <title>&#10;Employé commercial polyvalent</title>
+            <company> Franprix</company>
+            <years> juillet 2021 - juin 2023</years>
+            <location> Paris 9e, France</location>
+            <contract> CDI à temps partiel</contract>
         </job>
         <job>
-            <title>Guide d’escape game</title>
-            <company>Kraken Escape</company>
-            <years>novembre 2019 – février 2020</years>
-            <location>Liévin, France</location>
-            <contract>CDD à temps partiel</contract>
+            <title>&#10;Guide d’escape game</title>
+            <company> Kraken Escape</company>
+            <years> novembre 2019 – février 2020</years>
+            <location> Liévin, France</location>
+            <contract> CDD à temps partiel</contract>
         </job>
     </experience>
     <languages>
         <language>
-            <name>Français</name>
+            <name>Langues : Français </name>
             <proficiency>Bilingue</proficiency>
         </language>
         <language>
-            <name>Anglais</name>
-            <proficiency>Intermédiaire</proficiency>
+            <name>&#10;Anglais</name>
+            <proficiency> Intermédiaire</proficiency>
         </language>
         <language>
-            <name>Kabyle</name>
-            <proficiency>Bilingue</proficiency>
-            <notes>Langue maternelle</notes>
+            <name>&#10;Kabyle</name>
+            <proficiency> Bilingue</proficiency>
         </language>
         <language>
-            <name>Arabe</name>
-            <proficiency>Courant</proficiency>
+            <name>&#10;Arabe</name>
+            <proficiency> Courant</proficiency>
         </language>
     </languages>
     <interests>
