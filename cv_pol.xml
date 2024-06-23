@@ -21,24 +21,24 @@
     </education>
     <experience>
         <job>
-            <title>Inżynier DevOps (program dualny)</title>
+            <title>Inżynier DevOps w trybie dualnym</title>
             <company>Société Générale</company>
             <years>od września 2023</years>
             <location>Fontenay-sous-Bois, Francja</location>
         </job>
         <job>
-            <title>Wszechstronny pracownik handlowy</title>
+            <title>Pracownik handlowy wielofunkcyjny</title>
             <company>Franprix</company>
             <years>lipiec 2021 - czerwiec 2023</years>
             <location>Paryż 9e, Francja</location>
-            <contract>Stała część etatu</contract>
+            <contract>UOP na część etatu</contract>
         </job>
         <job>
-            <title>Przewodnik po grze ucieczki</title>
+            <title>Przewodnik escape room</title>
             <company>Kraken Escape</company>
             <years>listopad 2019 – luty 2020</years>
             <location>Liévin, Francja</location>
-            <contract>Umowa na część etatu</contract>
+            <contract>Umowa o pracę na część etatu</contract>
         </job>
     </experience>
     <languages>
@@ -57,27 +57,27 @@
         </language>
         <language>
             <name>Arabski</name>
-            <proficiency>Plastyczny</proficiency>
+            <proficiency>Biegły</proficiency>
         </language>
     </languages>
     <interests>
-        <interest>Pływanie, siłownia, koszykówka</interest>
+        <interest>Pływanie, kulturystyka i koszykówka</interest>
         <interest>Gry strategiczne</interest>
         <interest>Czytanie</interest>
     </interests>
     <skills>
         <soft-skills>
-            <skill>Rzetelność</skill>
+            <skill>Staranność</skill>
             <skill>Odpowiedzialność</skill>
             <skill>Uwaga na szczegóły</skill>
-            <skill>Ciekawość świata</skill>
+            <skill>Ciekawość</skill>
         </soft-skills>
         <technical-skills>
             <skill>DevOps: Terraform, Ansible, Jenkins, GitHub Actions, XL Deploy, Liquibase</skill>
             <skill>Języki programowania: C, C++, Java, Python, OCaml, MatLab</skill>
             <skill>Web: HTML & CSS, PHP, JavaScript</skill>
             <skill>Oprogramowanie: Git, Nginx, Pakiet Office, Eclipse, Docker</skill>
-            <skill>Inne: UML, SQL, Apex Oracle, Algorytmy (struktury danych, algorytmika grafów, programowanie dynamiczne)</skill>
+            <skill>Inne: UML, SQL, Apex Oracle, Algorytmy (struktury danych, grafowe, programowanie dynamiczne)</skill>
         </technical-skills>
     </skills>
 </cv>

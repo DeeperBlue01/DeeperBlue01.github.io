@@ -1,120 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:foaf="http://xmlns.com/foaf/0.1/"
-         xmlns:cv="http://example.org/cv#">
-
-    <foaf:Person rdf:about="#me">
-        <foaf:name>Massyl CHAKER</foaf:name>
-        <foaf:phone rdf:resource="tel:+33612345678"/>
-        <foaf:mbox rdf:resource="mailto:chakermassyl@gmail.com"/>
-        <cv:address>Argenteuil</cv:address>
-    </foaf:Person>
-
-    <cv:Education rdf:about="#edu1">
-        <cv:school>Sup Galilée, Villetaneuse</cv:school>
-        <cv:degree>Ingénieur en informatique</cv:degree>
-        <cv:year>2022 – 2025</cv:year>
-    </cv:Education>
-
-    <cv:Education rdf:about="#edu2">
-        <cv:school>Université Sorbonne Paris Nord, Villetaneuse</cv:school>
-        <cv:degree>Licence 2 informatique</cv:degree>
-        <cv:year>2020 – 2022</cv:year>
-    </cv:Education>
-
-    <cv:Experience rdf:about="#exp1">
-        <cv:jobTitle>Ingénieur DevOps en alternance</cv:jobTitle>
-        <cv:employer>Société Générale</cv:employer>
-        <cv:startDate>2023-09</cv:startDate>
-        <cv:endDate>Present</cv:endDate>
-        <cv:location>Fontenay-sous-Bois, France</cv:location>
-    </cv:Experience>
-
-    <cv:Experience rdf:about="#exp2">
-        <cv:jobTitle>Employé commercial polyvalent</cv:jobTitle>
-        <cv:employer>Franprix</cv:employer>
-        <cv:startDate>2021-07</cv:startDate>
-        <cv:endDate>2023-06</cv:endDate>
-        <cv:location>Paris 9e, France</cv:location>
-        <cv:contractType>CDI à temps partiel</cv:contractType>
-    </cv:Experience>
-
-    <cv:Experience rdf:about="#exp3">
-        <cv:jobTitle>Guide d’escape game</cv:jobTitle>
-        <cv:employer>Kraken Escape</cv:employer>
-        <cv:startDate>2019-11</cv:startDate>
-        <cv:endDate>2020-02</cv:endDate>
-        <cv:location>Liévin, France</cv:location>
-        <cv:contractType>CDD à temps partiel</cv:contractType>
-    </cv:Experience>
-
-    <cv:Languages rdf:about="#lang1">
-        <cv:language>Français</cv:language>
-        <cv:proficiency>Bilingue</cv:proficiency>
-    </cv:Languages>
-
-    <cv:Languages rdf:about="#lang2">
-        <cv:language>Anglais</cv:language>
-        <cv:proficiency>Intermédiaire</cv:proficiency>
-    </cv:Languages>
-
-    <cv:Languages rdf:about="#lang3">
-        <cv:language>Kabyle</cv:language>
-        <cv:proficiency>Bilingue</cv:proficiency>
-        <cv:notes>Langue maternelle</cv:notes>
-    </cv:Languages>
-
-    <cv:Languages rdf:about="#lang4">
-        <cv:language>Arabe</cv:language>
-        <cv:proficiency>Courant</cv:proficiency>
-    </cv:Languages>
-
-    <cv:Interests rdf:about="#int1">
-        <cv:interest>Natation, musculation et basketball</cv:interest>
-    </cv:Interests>
-
-    <cv:Interests rdf:about="#int2">
-        <cv:interest>Jeux de stratégies</cv:interest>
-    </cv:Interests>
-
-    <cv:Interests rdf:about="#int3">
-        <cv:interest>Lecture</cv:interest>
-    </cv:Interests>
-
-    <cv:Skills rdf:about="#skills1">
-        <cv:skill>Rigoureux</cv:skill>
-    </cv:Skills>
-
-    <cv:Skills rdf:about="#skills2">
-        <cv:skill>Sens des responsabilités</cv:skill>
-    </cv:Skills>
-
-    <cv:Skills rdf:about="#skills3">
-        <cv:skill>Attentif aux détails</cv:skill>
-    </cv:Skills>
-
-    <cv:Skills rdf:about="#skills4">
-        <cv:skill>Curieux</cv:skill>
-    </cv:Skills>
-
-    <cv:Skills rdf:about="#skills5">
-        <cv:skill>DevOps: Terraform, Ansible, Jenkins, GitHub Actions, XL Deploy, Liquibase</cv:skill>
-    </cv:Skills>
-
-    <cv:Skills rdf:about="#skills6">
-        <cv:skill>Langages de programmation: C, C++, Java, Python, OCaml, MatLab</cv:skill>
-    </cv:Skills>
-
-    <cv:Skills rdf:about="#skills7">
-        <cv:skill>Web: HTML & CSS, PHP, JavaScript</cv:skill>
-    </cv:Skills>
-
-    <cv:Skills rdf:about="#skills8">
-        <cv:skill>Logiciels: Git, Nginx, Pack Office, Eclipse, Docker</cv:skill>
-    </cv:Skills>
-
-    <cv:Skills rdf:about="#skills9">
-        <cv:skill>Autres: UML, SQL, Apex Oracle, Algorithmique (structures de données, algorithmique des graphes, programmation dynamique)</cv:skill>
-    </cv:Skills>
-
-</rdf:RDF>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+<cv>
+    <personal-info>
+        <name>Jan Kowalski</name>
+        <email>jan.kowalski@example.pl</email>
+        <phone>+48 600 123 456</phone>
+    </personal-info>
+    <education>
+        <school>
+            <name>Uniwersytet Warszawski</name>
+            <degree>Magister Informatyki</degree>
+            <year>2020</year>
+        </school>
+    </education>
+    <experience>
+        <job>
+            <title>Web Developer</title>
+            <company>Przykład SA</company>
+            <years>2020-2023</years>
+        </job>
+    </experience>
+</cv>

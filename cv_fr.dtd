@@ -1,29 +1,23 @@
-<!ELEMENT cv (personal-info, education, experience, languages?, interests?, soft-skills?, technical-skills?)>
-<!ELEMENT personal-info (name, address?, email, phone)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT address (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT phone (#PCDATA)>
-<!ELEMENT education (school+)>
-<!ELEMENT school (name, degree, year)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT degree (#PCDATA)>
-<!ELEMENT year (#PCDATA)>
-<!ELEMENT experience (job+)>
-<!ELEMENT job (title, company, years, location?, contract?)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT company (#PCDATA)>
-<!ELEMENT years (#PCDATA)>
-<!ELEMENT location (#PCDATA)>
-<!ELEMENT contract (#PCDATA)>
-<!ELEMENT languages (language+)>
-<!ELEMENT language (name, proficiency)>
-<!ELEMENT proficiency (#PCDATA)>
-<!ELEMENT interests (interest+)>
-<!ELEMENT interest (#PCDATA)>
-<!ELEMENT soft-skills (skill+)>
-<!ELEMENT skill (#PCDATA)>
-<!ELEMENT technical-skills (skill-category+)>
-<!ELEMENT skill-category (name, skills)>
-<!ELEMENT skills (skill+)>
-<!ELEMENT skill (#PCDATA)>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+<cv>
+    <personal-info>
+        <name>Jean Dupont</name>
+        <email>jean.dupont@example.com</email>
+        <phone>+33 6 12 34 56 78</phone>
+    </personal-info>
+    <education>
+        <school>
+            <name>Université Paris-Sorbonne</name>
+            <degree>Master en Informatique</degree>
+            <year>2020</year>
+        </school>
+    </education>
+    <experience>
+        <job>
+            <title>Développeur Web</title>
+            <company>Exemple SA</company>
+            <years>2020-2023</years>
+        </job>
+    </experience>
+</cv>
