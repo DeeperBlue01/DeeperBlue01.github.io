@@ -1,3 +1,51 @@
+function displayCV(xml) {
+    const cvContent = document.getElementById('cv-content');
+    cvContent.innerHTML = '';
+
+    // Récupération des titres des rubriques en fonction de la langue actuelle
+    const educationTitle = xml.querySelector('education').getAttribute('title');
+    const experienceTitle = xml.querySelector('experience').getAttribute('title');
+    const languagesTitle = xml.querySelector('languages').getAttribute('title');
+    const interestsTitle = xml.querySelector('interests').getAttribute('title');
+    const skillsTitle = xml.querySelector('skills').getAttribute('title');
+    const technicalTitle = xml.querySelector('technical').getAttribute('title');
+
+    // Affichage des titres des rubriques
+    cvContent.innerHTML += `<h2>${educationTitle}</h2>`;
+    xml.querySelectorAll('education entry').forEach(entry => {
+        const year = entry.querySelector('year').textContent;
+        const details = entry.querySelector('details').textContent;
+        cvContent.innerHTML += `<p>${year} : ${details}</p>`;
+    });
+
+    cvContent.innerHTML += `<h2>${experienceTitle}</h2>`;
+    xml.querySelectorAll('experience entry').forEach(entry => {
+        const year = entry.querySelector('year').textContent;
+        const details = entry.querySelector('details').textContent;
+        cvContent.innerHTML += `<p>${year} : ${details}</p>`;
+    });
+
+    cvContent.innerHTML += `<h2>${languagesTitle}</h2>`;
+    xml.querySelectorAll('languages entry').forEach(entry => {
+        cvContent.innerHTML += `<p>${entry.textContent}</p>`;
+    });
+
+    cvContent.innerHTML += `<h2>${interestsTitle}</h2>`;
+    xml.querySelectorAll('interests entry').forEach(entry => {
+        cvContent.innerHTML += `<p>${entry.textContent}</p>`;
+    });
+
+    cvContent.innerHTML += `<h2>${skillsTitle}</h2>`;
+    xml.querySelectorAll('skills entry').forEach(entry => {
+        cvContent.innerHTML += `<p>${entry.textContent}</p>`;
+    });
+
+    cvContent.innerHTML += `<h2>${technicalTitle}</h2>`;
+    xml.querySelectorAll('technical entry').forEach(entry => {
+        cvContent.innerHTML += `<p>${entry.textContent}</p>`;
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const homeLink = document.getElementById('home-link');
     const cvLink = document.getElementById('cv-link');
@@ -61,61 +109,6 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.log(error));
     }
 
-    function displayCV(xml) {
-        const cvContent = document.getElementById('cv-content');
-        cvContent.innerHTML = '';
-
-        const personal = xml.querySelector('personal');
-        const education = xml.querySelector('education');
-        const experience = xml.querySelector('experience');
-        const languages = xml.querySelector('languages');
-        const interests = xml.querySelector('interests');
-        const skills = xml.querySelector('skills');
-        const technical = xml.querySelector('technical');
-
-        const name = personal.querySelector('name').textContent;
-        const address = personal.querySelector('address').textContent;
-        const email = personal.querySelector('email').textContent;
-
-        cvContent.innerHTML += `<h3>${name}</h3>`;
-        cvContent.innerHTML += `<p><strong>Address:</strong> ${address}</p>`;
-        cvContent.innerHTML += `<p><strong>Email:</strong> ${email}</p>`;
-
-        cvContent.innerHTML += '<h4>Formation</h4>';
-        education.querySelectorAll('entry').forEach(entry => {
-            const year = entry.querySelector('year').textContent;
-            const details = entry.querySelector('details').textContent;
-            cvContent.innerHTML += `<p>${year} : ${details}</p>`;
-        });
-
-        cvContent.innerHTML += '<h4>Expériences professionnelles</h4>';
-        experience.querySelectorAll('entry').forEach(entry => {
-            const year = entry.querySelector('year').textContent;
-            const details = entry.querySelector('details').textContent;
-            cvContent.innerHTML += `<p>${year} : ${details}</p>`;
-        });
-
-        cvContent.innerHTML += '<h4>Langues</h4>';
-        languages.querySelectorAll('entry').forEach(entry => {
-            cvContent.innerHTML += `<p>${entry.textContent}</p>`;
-        });
-
-        cvContent.innerHTML += '<h4>Centres d’intérêt</h4>';
-        interests.querySelectorAll('entry').forEach(entry => {
-            cvContent.innerHTML += `<p>${entry.textContent}</p>`;
-        });
-
-        cvContent.innerHTML += '<h4>Soft skills</h4>';
-        skills.querySelectorAll('entry').forEach(entry => {
-            cvContent.innerHTML += `<p>${entry.textContent}</p>`;
-        });
-
-        cvContent.innerHTML += '<h4>Compétences techniques</h4>';
-        technical.querySelectorAll('entry').forEach(entry => {
-            cvContent.innerHTML += `<p>${entry.textContent}</p>`;
-        });
-    }
-
-    // Load the default language on page load
+    // Chargement de la langue par défaut au chargement de la page
     loadHomePage(currentLang);
 });
