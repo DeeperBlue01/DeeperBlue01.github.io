@@ -1,83 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE cv SYSTEM "cv.dtd">
 <cv>
-    <personal-info>
-        <name>Massyl CHAKER</name>
-        <address>Argenteuil</address>
+    <informations-personnelles>
+        <nom>Massyl CHAKER</nom>
+        <titre>Ingénieur informatique en alternance</titre>
+        <adresse>Argenteuil</adresse>
         <email>chakermassyl@gmail.com</email>
-        <phone>+33 6 12 34 56 78</phone>
-    </personal-info>
-    <education>
-        <school>
-            <name>Sup Galilée, Villetaneuse</name>
-            <degree>Cursus ingénieur informatique</degree>
-            <year>2022 – 2025</year>
-        </school>
-        <school>
-            <name>Université Sorbonne Paris Nord, Villetaneuse</name>
-            <degree>Licence 2 informatique</degree>
-            <year>2020 – 2022</year>
-        </school>
-    </education>
-    <experience>
-        <job>
-            <title>Ingénieur DevOps en alternance</title>
-            <company>Société Générale</company>
-            <years>depuis septembre 2023</years>
-            <location>Fontenay-sous-Bois, France</location>
-        </job>
-        <job>
-            <title>Employé commercial polyvalent</title>
-            <company>Franprix</company>
-            <years>juillet 2021 - juin 2023</years>
-            <location>Paris 9e, France</location>
-            <contract>CDI à temps partiel</contract>
-        </job>
-        <job>
-            <title>Guide d’escape game</title>
-            <company>Kraken Escape</company>
-            <years>novembre 2019 – février 2020</years>
-            <location>Liévin, France</location>
-            <contract>CDD à temps partiel</contract>
-        </job>
-    </experience>
-    <languages>
-        <language>
-            <name>Français</name>
-            <proficiency>Bilingue</proficiency>
-        </language>
-        <language>
-            <name>Anglais</name>
-            <proficiency>Intermédiaire</proficiency>
-        </language>
-        <language>
-            <name>Kabyle</name>
-            <proficiency>Bilingue</proficiency>
-            <notes>Langue maternelle</notes>
-        </language>
-        <language>
-            <name>Arabe</name>
-            <proficiency>Courant</proficiency>
-        </language>
-    </languages>
-    <interests>
-        <interest>Natation, musculation et basketball</interest>
-        <interest>Jeux de stratégies</interest>
-        <interest>Lecture</interest>
-    </interests>
-    <skills>
-        <soft-skills>
-            <skill>Rigoureux</skill>
-            <skill>Sens des responsabilités</skill>
-            <skill>Attentif aux détails</skill>
-            <skill>Curieux</skill>
-        </soft-skills>
-        <technical-skills>
-            <skill>DevOps: Terraform, Ansible, Jenkins, GitHub Actions, XL Deploy, Liquibase</skill>
-            <skill>Langages de programmation: C, C++, Java, Python, OCaml, MatLab</skill>
-            <skill>Web: HTML & CSS, PHP, JavaScript</skill>
-            <skill>Logiciels: Git, Nginx, Pack Office, Eclipse, Docker</skill>
-            <skill>Autres: UML, SQL, Apex Oracle, Algorithmique (structures de données, algorithmique des graphes, programmation dynamique)</skill>
-        </technical-skills>
-    </skills>
+    </informations-personnelles>
+    <formation>
+        <cursus>
+            <periode>2022 – 2025</periode>
+            <description>Cursus ingénieur informatique – Sup Galilée, Villetaneuse</description>
+        </cursus>
+        <licence>
+            <periode>2020 – 2022</periode>
+            <description>Licence 2 informatique (Mention très bien) – Université Sorbonne Paris Nord, Villetaneuse</description>
+        </licence>
+    </formation>
+    <experiences-professionnelles>
+        <experience>
+            <titre>Ingénieur DevOps en alternance</titre>
+            <entreprise>Société Générale</entreprise>
+            <lieu>Fontenay sous Bois</lieu>
+            <periode>Depuis septembre 2023</periode>
+        </experience>
+        <experience>
+            <titre>Employé commercial polyvalent</titre>
+            <entreprise>Franprix</entreprise>
+            <lieu>Paris 9e</lieu>
+            <periode>Juillet 2021 - Juin 2023</periode>
+            <contrat>CDI à temps partiel</contrat>
+        </experience>
+        <experience>
+            <titre>Guide d’escape game</titre>
+            <entreprise>Kraken Escape</entreprise>
+            <lieu>Liévin</lieu>
+            <periode>Novembre 2019 – Février 2020</periode>
+            <contrat>CDD à temps partiel</contrat>
+        </experience>
+    </experiences-professionnelles>
+    <langues>
+        <langue>
+            <nom>Français</nom>
+            <niveau>Bilingue ou natal</niveau>
+        </langue>
+        <langue>
+            <nom>Anglais</nom>
+            <niveau>Intermédiaire</niveau>
+        </langue>
+        <langue>
+            <nom>Kabyle</nom>
+            <niveau>Bilingue ou natal</niveau>
+        </langue>
+        <langue>
+            <nom>Arabe</nom>
+            <niveau>Courant</niveau>
+        </langue>
+    </langues>
+    <centres-interet>
+        <centre>Natation, musculation et basketball</centre>
+        <centre>Jeux de stratégies</centre>
+        <centre>Lecture</centre>
+    </centres-interet>
+    <soft-skills>
+        <skill>Rigoureux</skill>
+        <skill>Sens des responsabilités</skill>
+        <skill>Attentif aux détails</skill>
+        <skill>Curieux</skill>
+    </soft-skills>
+    <competences-techniques>
+        <devops>terraform ansible Jenkins GitHub actions xldeploy liquibase</devops>
+        <langages>C, C++, Java, Python, OCaml, MatLab</langages>
+        <web>HTML & CSS, PHP, JavaScript</web>
+        <logiciels>Git, Nginx, Pack Office, Eclipse, Docker</logiciels>
+        <autres>UML, SQL, Apex Oracle, Algorithmique (structures de données, algorithmique des graphes, programmation dynamique)</autres>
+    </competences-techniques>
 </cv>

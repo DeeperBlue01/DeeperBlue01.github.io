@@ -2,68 +2,57 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon CV</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CV de Massyl CHAKER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Charger le CV initial en français au chargement de la page
+            var lang = 'fr';
+            loadCV(lang);
+            
+            // Gérer le changement de langue
+            $('#lang-select').change(function() {
+                lang = $(this).val();
+                loadCV(lang);
+            });
+
+            // Fonction pour charger le CV en fonction de la langue sélectionnée
+            function loadCV(lang) {
+                $.ajax({
+                    type: "GET",
+                    url: "transform.php", // Endpoint pour la transformation XML -> HTML
+                    data: { lang: lang },
+                    success: function(response) {
+                        $('#cv-content').html(response);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Erreur lors du chargement du CV: ' + error);
+                    }
+                });
+            }
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Mon CV</h1>
-        <div class="nav">
-            <a href="index_fr.html">Accueil</a>
-            <a href="cv.html?lang=fr">CV</a>
-            <a href="cv.html?lang=fr"><img src="fr_flag.png" alt="Français" class="flag"></a>
-            <a href="cv.html?lang=jp"><img src="jp_flag.png" alt="Japonais" class="flag"></a>
-            <a href="cv.html?lang=pol"><img src="pol_flag.png" alt="Polonais" class="flag"></a>
-        </div>
-        <div id="cv-content" class="cv-content">
-            <!-- Le contenu du CV sera généré à partir du XML -->
-        </div>
+    <h1>CV de Massyl CHAKER</h1>
+    
+    <!-- Sélecteur de langue -->
+    <label for="lang-select">Choisir la langue du CV:</label>
+    <select id="lang-select">
+        <option value="fr">Français</option>
+        <option value="jp">日本語 (Japonais)</option>
+        <option value="pol">Polski (Polonais)</option>
+    </select>
+    
+    <div id="cv-content">
+        <!-- Contenu du CV inséré via XSLT -->
     </div>
-    <footer>
-        &copy; 2024 Mon Portfolio
-    </footer>
+
+    <!-- Chargement initial du CV en français -->
     <script>
-        function getQueryVariable(variable) {
-            const query = window.location.search.substring(1);
-            const vars = query.split("&");
-            for (let i = 0; i < vars.length; i++) {
-                const pair = vars[i].split("=");
-                if (pair[0] === variable) {
-                    return pair[1];
-                }
-            }
-            return false;
-        }
-
-        function loadCV(lang) {
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function() {
-                if (this.status == 200) {
-                    const parser = new DOMParser();
-                    const xml = parser.parseFromString(this.responseText, "text/xml");
-                    const xsl = new XMLHttpRequest();
-                    xsl.onload = function() {
-                        if (this.status == 200) {
-                            const xslDoc = parser.parseFromString(this.responseText, "text/xml");
-                            const xsltProcessor = new XSLTProcessor();
-                            xsltProcessor.importStylesheet(xslDoc);
-                            const resultDocument = xsltProcessor.transformToFragment(xml, document);
-                            document.getElementById("cv-content").appendChild(resultDocument);
-                        }
-                    }
-                    xsl.open("GET", "cv.xsl", true);
-                    xsl.send();
-                } else {
-                    document.getElementById("cv-content").innerHTML = "Erreur de chargement du CV.";
-                }
-            }
-            xhttp.open("GET", "cv_" + lang + ".xml", true);
-            xhttp.send();
-        }
-
-        const lang = getQueryVariable("lang") || "fr";
-        document.documentElement.lang = lang;
-        loadCV(lang);
+        // Décommentez cette ligne pour charger le CV initial en français
+        // loadCV('fr');
     </script>
 </body>
 </html>
