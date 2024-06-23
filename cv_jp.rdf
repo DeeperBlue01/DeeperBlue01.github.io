@@ -1,23 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE cv SYSTEM "cv.dtd">
-<cv>
-    <personal-info>
-        <name>山田太郎</name>
-        <email>taro.yamada@example.jp</email>
-        <phone>+81 90 1234 5678</phone>
-    </personal-info>
-    <education>
-        <school>
-            <name>東京大学</name>
-            <degree>情報学修士</degree>
-            <year>2020</year>
-        </school>
-    </education>
-    <experience>
-        <job>
-            <title>ウェブ開発者</title>
-            <company>例株式会社</company>
-            <years>2020-2023</years>
-        </job>
-    </experience>
-</cv>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:cv="http://example.org/cv#">
+
+    <foaf:Person rdf:about="#me">
+        <foaf:name>マッシル シャケル</foaf:name>
+        <foaf:phone rdf:resource="tel:+33612345678"/>
+        <foaf:mbox rdf:resource="mailto:chakermassyl@gmail.com"/>
+        <cv:address>アルジャントゥイユ</cv:address>
+    </foaf:Person>
+
+    <cv:Education rdf:about="#edu1">
+        <cv:school>Sup Galilée, ヴィレタヌーズ</cv:school>
+        <cv:degree>コンピューターエンジニアリングプログラム</cv:degree>
+        <cv:year>2022 – 2025</cv:year>
+    </cv:Education>
+
+    <cv:Education rdf:about="#edu2">
+        <cv:school>Université Sorbonne Paris Nord, ヴィレタヌーズ</cv:school>
+        <cv:degree>コンピューターサイエンス学士</cv:degree>
+        <cv:year>2020 – 2022</cv:year>
+    </cv:Education>
+
+    <cv:Experience rdf:about="#exp1">
+        <cv:jobTitle>デボップスエンジニア（デュアルトレーニング）</cv:jobTitle>
+        <cv:employer>Société Générale</cv:employer>
+        <cv:startDate>2023-09</cv:startDate>
+        <cv:endDate>Present</cv:endDate>
+        <cv:location>フランス フォンテネー・スー・ボワ</cv:location>
+    </cv:Experience>
+
+    <cv:Experience rdf:about="#exp2">
+        <cv:jobTitle>多目的商業従業員</cv:jobTitle>
+        <cv:employer>Franprix</cv:employer>
+        <cv:startDate>2021-07</cv:startDate>
+        <cv:endDate>2023-06</cv:endDate>
+        <cv:location>フランス パリ 9区</cv:location>
+        <cv:contractType>パートタイム正社員</cv:contractType>
+    </cv:Experience>
+
+    <cv:Experience rdf:about="#exp3">
+        <cv:jobTitle>脱出ゲームガイド</cv:jobTitle>
+        <cv:employer>Kraken Escape</cv:employer>
+        <cv:startDate>2019-11</cv:startDate>
+        <cv:endDate>2020-02</cv:endDate>
+        <cv:location>フランス リエヴァン</cv:location>
+        <cv:contractType>パートタイム契約</cv:contractType>
+    </cv:Experience>
+
+    <cv:Languages rdf:about="#lang1">
+        <cv:language>フランス語</cv:language>
+        <cv:proficiency>流暢</cv:proficiency>
+    </cv:Languages>
+
+    <cv:Languages rdf:about="#lang2">
+        <cv:language>英語</cv:language>
+        <cv:proficiency>中級</cv:proficiency>
+    </cv:Languages>
+
+    <cv:Languages rdf:about="#lang3">
+        <cv:language>カビル語</cv:language>
+        <cv:proficiency>流暢</cv:proficiency>
+        <cv:notes>母国語</cv:notes>
+    </cv:Languages>
+
+    <cv:Languages rdf:about="#lang4">
+        <cv:language>アラビア語</cv:language>
+        <cv:proficiency>上級</cv:proficiency>
+    </cv:Languages>
+
+    <cv:Interests rdf:about="#int1">
+        <cv:interest>水泳、筋トレ、バスケットボール</cv:interest>
+    </cv:Interests>
+
+    <cv:Interests rdf:about="#int2">
+        <cv:interest>ストラテジーゲーム</cv:interest>
+    </cv:Interests>
+
+    <cv:Interests rdf:about="#int3">
+        <cv:interest>読書</cv:interest>
+    </cv:Interests>
+
+    <cv:Skills rdf:about="#skills1">
+        <cv:skill>正確性</cv:skill>
+    </cv:Skills>
+
+    <cv:Skills rdf:about="#skills2">
+        <cv:skill>責任感</cv:skill>
+    </cv:Skills>
+
+    <cv:Skills rdf:about="#skills3">
+        <cv:skill>細部に注意する能力</cv:skill>
+    </cv:Skills>
+
+    <cv:Skills rdf:about="#skills4">
+        <cv:skill>好奇心</cv:skill>
+    </cv:Skills>
+
+    <cv:Skills rdf:about="#skills5">
+        <cv:skill>DevOps: Terraform、Ansible、Jenkins、GitHub Actions、XL Deploy、Liquibase</cv:skill>
+    </cv:Skills>
+
+    <cv:Skills rdf:about="#skills6">
+        <cv:skill>プログラミング言語: C、C++、Java、Python、OCaml、MatLab</cv:skill>
+    </cv:Skills>
+
+    <cv:Skills rdf:about="#skills7">
+        <cv:skill>Web: HTML & CSS、PHP、JavaScript</cv:skill>
+    </cv:Skills>
+
+    <cv:Skills rdf:about="#skills8">
+        <cv:skill>ソフトウェア: Git、Nginx、Officeパッケージ、Eclipse、Docker</cv:skill>
+    </cv:Skills>
+
+    <cv:Skills rdf:about="#skills9">
+        <cv:skill>その他: UML、SQL、Apex Oracle、アルゴリズム（データ構造、グラフアルゴリズム、動的プログラミング）</cv:skill>
+    </cv:Skills>
+
+</rdf:RDF>

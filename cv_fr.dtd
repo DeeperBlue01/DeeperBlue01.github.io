@@ -2,22 +2,122 @@
 <!DOCTYPE cv SYSTEM "cv.dtd">
 <cv>
     <personal-info>
-        <name>Jean Dupont</name>
-        <email>jean.dupont@example.com</email>
-        <phone>+33 6 12 34 56 78</phone>
+        <name>Massyl CHAKER</name>
+        <email>chakermassyl@gmail.com</email>
+        <phone>+33612345678</phone>
     </personal-info>
     <education>
         <school>
-            <name>Université Paris-Sorbonne</name>
-            <degree>Master en Informatique</degree>
-            <year>2020</year>
+            <name>Sup Galilée, Villetaneuse</name>
+            <degree>Ingénieur en informatique</degree>
+            <year>2022 – 2025</year>
+        </school>
+        <school>
+            <name>Université Sorbonne Paris Nord, Villetaneuse</name>
+            <degree>Licence 2 informatique</degree>
+            <year>2020 – 2022</year>
         </school>
     </education>
     <experience>
         <job>
-            <title>Développeur Web</title>
-            <company>Exemple SA</company>
-            <years>2020-2023</years>
+            <title>Ingénieur DevOps en alternance</title>
+            <company>Société Générale</company>
+            <years>Depuis septembre 2023</years>
+            <location>Fontenay-sous-Bois, France</location>
+        </job>
+        <job>
+            <title>Employé commercial polyvalent</title>
+            <company>Franprix</company>
+            <years>Juillet 2021 - Juin 2023</years>
+            <location>Paris 9e, France</location>
+            <contract>CDI à temps partiel</contract>
+        </job>
+        <job>
+            <title>Guide d’escape game</title>
+            <company>Kraken Escape</company>
+            <years>Novembre 2019 - Février 2020</years>
+            <location>Liévin, France</location>
+            <contract>CDD à temps partiel</contract>
         </job>
     </experience>
+    <languages>
+        <language>
+            <name>Français</name>
+            <proficiency>Bilingue</proficiency>
+        </language>
+        <language>
+            <name>Anglais</name>
+            <proficiency>Intermédiaire</proficiency>
+        </language>
+        <language>
+            <name>Kabyle</name>
+            <proficiency>Bilingue (maternelle)</proficiency>
+        </language>
+        <language>
+            <name>Arabe</name>
+            <proficiency>Courant</proficiency>
+        </language>
+    </languages>
+    <interests>
+        <interest>Natation, musculation et basketball</interest>
+        <interest>Jeux de stratégies</interest>
+        <interest>Lecture</interest>
+    </interests>
+    <soft-skills>
+        <skill>Rigoureux</skill>
+        <skill>Sens des responsabilités</skill>
+        <skill>Attentif aux détails</skill>
+        <skill>Curieux</skill>
+    </soft-skills>
+    <technical-skills>
+        <skill-category>
+            <name>DevOps</name>
+            <skills>
+                <skill>Terraform</skill>
+                <skill>Ansible</skill>
+                <skill>Jenkins</skill>
+                <skill>GitHub Actions</skill>
+                <skill>XL Deploy</skill>
+                <skill>Liquibase</skill>
+            </skills>
+        </skill-category>
+        <skill-category>
+            <name>Langages de programmation</name>
+            <skills>
+                <skill>C</skill>
+                <skill>C++</skill>
+                <skill>Java</skill>
+                <skill>Python</skill>
+                <skill>OCaml</skill>
+                <skill>MatLab</skill>
+            </skills>
+        </skill-category>
+        <skill-category>
+            <name>Web</name>
+            <skills>
+                <skill>HTML & CSS</skill>
+                <skill>PHP</skill>
+                <skill>JavaScript</skill>
+            </skills>
+        </skill-category>
+        <skill-category>
+            <name>Logiciels</name>
+            <skills>
+                <skill>Git</skill>
+                <skill>Nginx</skill>
+                <skill>Pack Office</skill>
+                <skill>Eclipse</skill>
+                <skill>Docker</skill>
+            </skills>
+        </skill-category>
+        <skill-category>
+            <name>Autres</name>
+            <skills>
+                <skill>UML</skill>
+                <skill>SQL</skill>
+                <skill>Apex Oracle</skill>
+                <skill>Algorithmique (structures de données, algorithmique des graphes, programmation dynamique…)</skill>
+            </skills>
+        </skill-category>
+    </technical-skills>
 </cv>
