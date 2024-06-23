@@ -1,23 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
-<cv>
-    <personal-info>
-        <name>山田太郎</name>
-        <email>taro.yamada@example.jp</email>
-        <phone>+81 90 1234 5678</phone>
-    </personal-info>
-    <education>
-        <school>
-            <name>東京大学</name>
-            <degree>情報学修士</degree>
-            <year>2020</year>
-        </school>
-    </education>
-    <experience>
-        <job>
-            <title>ウェブ開発者</title>
-            <company>例株式会社</company>
-            <years>2020-2023</years>
-        </job>
-    </experience>
-</cv>
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>私の履歴書</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>私の履歴書</h1>
+        <div class="nav">
+            <a href="index_jp.html">ホーム</a>
+            <a href="cv.html?lang=jp">履歴書</a>
+            <a href="cv.html?lang=fr"><img src="fr_flag.png" alt="フランス語" class="flag"></a>
+            <a href="cv.html?lang=jp"><img src="jp_flag.png" alt="日本語" class="flag"></a>
+            <a href="cv.html?lang=pol"><img src="pol_flag.png" alt="ポーランド語" class="flag"></a>
+        </div>
+        <div id="cv-content" class="cv-content">
+            <!-- Le contenu du CV sera généré à partir du XML -->
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Mon Portfolio
+    </footer>
+    <script>
+        function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split("&");
+            for (let i = 0; i < vars.length; i++) {
+                const pair = vars[i].split("=");
+                if (pair[0] === variable) {
+                    return pair[1];
+                }
+            }
+            return false;
+        }
+
+        function loadCV(lang) {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                if (this.status == 200) {
+                    document.getElementById("cv-content").innerHTML = this.responseText;
+                } else {
+                    document.getElementById("cv-content").innerHTML = "CVの読み込みエラー.";
+                }
+            }
+            xhttp.open("GET", "cv_" + lang + ".xml", true);
+            xhttp.send();
+        }
+
+        const lang = getQueryVariable("lang") || "jp";
+        document.documentElement.lang = lang;
+        loadCV(lang);
+    </script>
+</body>
+</html>
